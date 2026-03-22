@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mundo Delfín Enciclopedia de mamíferos marinos: especies, comportamiento, conservación e inteligencia oceánica.">
+    <title>Mundo Delfín</title>
+    <!-- Enlace a boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tipografías de google -->
+    <!-- Enlace a mis estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Barra de bavegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+            aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mundo Delfin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Desplegar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link active" href="#hero" aria-current="page">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#estadisticas">Estadísticas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#especies">Especies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="¡Escríbenos si quieres colaborar!">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- intro  -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>Mundo Delfín</h1>
+            <p class="lead">
+                Los delfines son algunos de los seres más inteligentes, sociales y fascinantes que habitan nuestros
+                océanos.
+                Descubre más de 40 especies, su comportamiento, su comunicación y los esfuerzos por su conservación.
+            </p>
+            <a href="#especies" class="btn btn-light btn-lg me-2">Explorar Especies</a>
+            <a href="#galeria" class="btn btn-outline-light btn-lg">Ver Galería</a>
+        </div>
+    </section>
+
+    <!-- componente 2 Alerta  -->
+    <div class="container mt-4">
+        <div class="alert alert-warning alert-dismissible fade show d-flex align-items-center" role="alert">
+            <div>
+                <strong>Conservación urgente:</strong> El delfín del río Yangtze (<em>Lipotes vexillifer</em>) fue
+                declarado
+                funcionalmente extinto en 2006. Actualmente más de <strong>20 especies de cetáceos</strong> figuran en
+                la
+                Lista Roja de la UICN como amenazadas o en peligro crítico.
+            </div>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Cerrar alerta"></button>
+        </div>
+    </div>
+
+    <!-- Estadísticas varias -->
+    <section class="container my-5" id="estadisticas">
+        <h2 class="section-title">Los Delfines en Cifras</h2>
+        <p class="section-subtitle">Datos clave sobre la familia de los delfínidos en nuestros océanos.</p>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="40">0</div>
+                    <p class="mb-0 text-muted">Especies conocidas</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="60">0</div>
+                    <p class="mb-0 text-muted">Velocidad máx (km/h)</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="300">0</div>
+                    <p class="mb-0 text-muted">Metros de inmersión</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="50">0</div>
+                    <p class="mb-0 text-muted">Años de vida máx.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Componente 3: Carrusel  -->
+    <section class="container mb-5" id="galeria">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-subtitle">Imágenes de delfines en su hábitat natural alrededor del mundo.</p>
+
+        <div id="delfinCarousel" class="carousel slide carousel-fade shadow rounded-4 overflow-hidden"
+            data-bs-ride="carousel" data-bs-interval="4000">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#delfinCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#delfinCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#delfinCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="carousel-img" alt="Delfín mular saltando en el océano">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Delfín Mular — <em>Tursiops truncatus</em></h5>
+                        <p>La especie más estudiada del mundo. Su desarrollo cerebral es comparable al de los grandes
+                            simios.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/3695720/pexels-photo-3695720.jpeg" class="carousel-img"
+                        alt="Orca nadando en el océano">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Orca — <em>Orcinus orca</em></h5>
+                        <p>El mayor depredador del océano y el delfínido (sí, las orcas son delfines aunque no lo creas)
+                            más grande que existe. Altamente organizada en
+                            clanes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://imgs.search.brave.com/44RdKiTadeO8wblAqaOzMlrV_CBBNwYcz5bHOD5mBbA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/ODQzLzc4NC9zbWFs/bC9hLXBpbmstZG9s/cGhpbi1pcy1qdW1w/aW5nLW91dC1vZi10/aGUtd2F0ZXItcGhv/dG8uanBn"
+                        class="carousel-img" alt="Delfín rosado en el río Amazonas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Delfín Rosado — <em>Inia geoffrensis</em></h5>
+                        <p>El mayor delfín fluvial del mundo. Habita exclusivamente la cuenca del Amazonas y el Orinoco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#delfinCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#delfinCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Componente 4 y 5 : Grid y Tarjetas -->
+    <section class="container mb-5" id="especies">
+        <h2 class="section-title">Especies Destacadas</h2>
+        <p class="section-subtitle">Conoce en profundidad a los representantes más emblemáticos de la familia
+            Delphinidae.</p>
+
+        <!-- Componente 4: Grid -->
+        <div class="row g-4">
+
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <!-- Componente 5: Tarjeta -->
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.pexels.com/photos/3695720/pexels-photo-3695720.jpeg" class="card-img-top"
+                        alt="Orca saltando en el océano">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">La Orca <small class="text-muted fs-6"><em>(Orcinus orca)</em></small>
+                        </h5>
+                        <p class="card-text flex-grow-1">
+                            Pese a su apodo de "ballena asesina", la orca es el delfínido más grande y el superpredador
+                            más sofisticado del océano. Organizada en matriarcados, cada clan posee dialectos únicos y
+                            rituales de caza transmitidos culturalmente durante décadas.
+                        </p>
+                        <!-- Componente 6: Badge -->
+                        <span class="badge bg-danger mb-3 align-self-start">Estado: Datos Insuficientes (UICN)</span>
+                        <!-- Componente 7: Botón -->
+                        <a href="#" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalOrca">
+                            Saber más
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- En las siguientes tarjetas se usa el badge y el botón de la misma forma
+             que en la anterior-->
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Delfín mular emergiendo del agua">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Delfín Mular <small class="text-muted fs-6"><em>(Tursiops
+                                    truncatus)</em></small></h5>
+                        <p class="card-text flex-grow-1">
+                            Con un cociente de encefalización de 4,14, el delfín mular posee la relación cerebro/cuerpo
+                            más alta entre los animales no humanos. Es capaz de reconocerse en espejos, utilizar
+                            herramientas
+                            (esponjas marinas como protector), aprender lenguajes de señas y resolver problemas
+                            abstractos.
+                        </p>
+                        <span class="badge bg-success mb-3 align-self-start">Estado: Preocupación Menor (UICN)</span>
+                        <a href="#" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalMular">
+                            Saber más
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://imgs.search.brave.com/44RdKiTadeO8wblAqaOzMlrV_CBBNwYcz5bHOD5mBbA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/ODQzLzc4NC9zbWFs/bC9hLXBpbmstZG9s/cGhpbi1pcy1qdW1w/aW5nLW91dC1vZi10/aGUtd2F0ZXItcGhv/dG8uanBn"
+                        class="card-img-top" alt="Delfín rosado del Amazonas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Delfín Rosado <small class="text-muted fs-6"><em>(Inia
+                                    geoffrensis)</em></small></h5>
+                        <p class="card-text flex-grow-1">
+                            Conocido en Brasil como <em>boto</em>, este delfín fluvial posee el mayor cerebro de todos
+                            los
+                            odontocetos en relación a su tamaño. Su coloración rosada se intensifica con la edad. Habita
+                            los ríos más caudalosos de Sudamérica y está catalogado en peligro por la UICN desde 2018.
+                        </p>
+                        <span class="badge bg-warning text-dark mb-3 align-self-start">Estado: En Peligro
+                            (UICN)</span>
+                        <a href="#" class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#modalRosado">
+                            Saber más
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Componente 8: Modales -->
+
+    <!-- Modal Orca -->
+    <div class="modal fade" id="modalOrca" tabindex="-1" aria-labelledby="modalOrcaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header orca text-white">
+                    <h5 class="modal-title" id="modalOrcaLabel">Orca — <em>Orcinus orca</em></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <img src="https://images.pexels.com/photos/3695720/pexels-photo-3695720.jpeg"
+                                class="img-fluid rounded" alt="Orca en el océano">
+                        </div>
+                        <div class="col-md-7">
+                            <p>Las orcas son los únicos depredadores cuya presa es casi cualquier animal marino, desde
+                                peces
+                                hasta tiburones blancos. Su cerebro es uno de los más complejos del reino
+                                animal:
+                                poseen una región adicional del sistema límbico asociada a las emociones sociales.</p>
+                            <p>Las técnicas de caza —como el varado intencional o la creación de olas para derribar
+                                focas
+                                del hielo— se transmiten de madres a crías de forma cultural, sin ser instintivas.</p>
+                            <p>En resumen: SON LOS SUPERDEPREDADORES DEL OCÉANO</p>
+                            <h6 class="mt-3">Capacidades cognitivas</h6>
+                            <!-- Componente 9: barra de progreso -->
+                            <label class="form-label">Inteligencia social</label>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-primary progress-animated" role="progressbar"
+                                    style="width: 0%" data-width="97%" aria-valuenow="97" aria-valuemin="0"
+                                    aria-valuemax="100">97%</div>
+                            </div>
+                            <label class="form-label">Capacidad de aprendizaje</label>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success progress-animated" role="progressbar"
+                                    style="width: 0%" data-width="92%">92%</div>
+                            </div>
+                            <label class="form-label">Complejidad vocal</label>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-info progress-animated" role="progressbar" style="width: 0%"
+                                    data-width="88%">88%</div>
+                            </div>
+                            <label class="form-label">Adaptabilidad al entorno</label>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-warning progress-animated" role="progressbar"
+                                    style="width: 0%" data-width="95%">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-muted me-auto">Fuente: National Geographic</span>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Defin Mular -->
+    <div class="modal fade" id="modalMular" tabindex="-1" aria-labelledby="modalMularLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header mular text-white">
+                    <h5 class="modal-title" id="modalMularLabel">Delfín Mular — <em>Tursiops truncatus</em></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <img src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="img-fluid rounded" alt="Delfín mular">
+                        </div>
+                        <div class="col-md-7">
+                            <p>El delfín mular tiene la mayor concentración de neuronas en la corteza cerebral de todos
+                                los mamíferos no humanos. Es capaz de comprender sintaxis, reconocerse en el espejo
+                                (autoconciencia),
+                                cooperar con humanos en tareas de pesca y comunicarse mediante silbidos individuales que
+                                funcionan
+                                como nombres propios.</p>
+                            <p>Se ha documentado el uso de esponjas de coral para proteger el rostro mientras escarba
+                                el fondo buscando peces — uno de los pocos casos de uso de herramientas en cetáceos.</p>
+
+                            <h6 class="mt-3">Capacidades cognitivas</h6>
+                            <label class="form-label">Autoconciencia</label>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success progress-animated" role="progressbar"
+                                    style="width: 0%" data-width="90%">90%</div>
+                            </div>
+                            <label class="form-label">Uso de herramientas</label>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-primary progress-animated" role="progressbar"
+                                    style="width: 0%" data-width="72%">72%</div>
+                            </div>
+                            <label class="form-label">Memoria a largo plazo</label>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-info progress-animated" role="progressbar" style="width: 0%"
+                                    data-width="95%">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-muted me-auto">Fuente: UICN</span>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delfín Rosado -->
+    <div class="modal fade" id="modalRosado" tabindex="-1" aria-labelledby="modalRosadoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-white modal-header-rosado">
+                    <h5 class="modal-title" id="modalRosadoLabel">Delfín Rosado — <em>Inia geoffrensis</em></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <img src="https://imgs.search.brave.com/44RdKiTadeO8wblAqaOzMlrV_CBBNwYcz5bHOD5mBbA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/ODQzLzc4NC9zbWFs/bC9hLXBpbmstZG9s/cGhpbi1pcy1qdW1w/aW5nLW91dC1vZi10/aGUtd2F0ZXItcGhv/dG8uanBn"
+                                class="img-fluid rounded" alt="Delfín rosado del Amazonas">
+                        </div>
+                        <div class="col-md-7">
+                            <p>El <em>boto</em> o delfín rosado es el mayor delfín de agua dulce del planeta y uno de
+                                los más amenazados. Su cuello es flexible (no tienen vértebras cervicales fusionadas) lo
+                                que
+                                le permite girar 180° para maniobrar entre las raíces sumergidas de la selva inundada.
+                            </p>
+                            <p>Su cerebro es un 40% mayor que el del ser humano en términos relativos. La mitología
+                                amazónica lo considera un ser mágico capaz de transformarse en humano por las noches.
+                            </p>
+
+                            <h6 class="mt-3">Capacidades sensoriales</h6>
+                            <label class="form-label">Ecolocalización en aguas turbias</label>
+                            <div class="progress mb-2">
+                                <div class="progress-bar progress-animated" role="progressbar"
+                                    class="progress-bar-rosado" style="width:0%" data-width="98%">98%</div>
+                            </div>
+                            <label class="form-label">Maniobrabilidad en selva inundada</label>
+                            <div class="progress mb-3">
+                                <div class="progress-bar progress-animated" role="progressbar"
+                                    class="progress-bar-rosado2" style="width:0%" data-width="85%">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-muted me-auto">Fuente: UICN Red List 2018, WWF Brasil</span>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Componente 10: Acordeón — FAQ -->
+    <section class="container my-5" id="faq">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">Todo lo que siempre quisiste saber sobre los delfines.</p>
+
+        <div class="accordion" id="accordionDelfines">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Cómo duermen los delfines?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionDelfines">
+                    <div class="accordion-body">
+                        Los delfines practican el <strong>sueño unihemisférico</strong>: desconectan la mitad del
+                        cerebro
+                        mientras la otra mitad permanece activa controlando la respiración voluntaria y vigilando el
+                        entorno.
+                        Durante este proceso mantienen un ojo abierto. Esta adaptación les permite descansar sin
+                        ahogarse,
+                        algo esencial ya que —a diferencia de los peces— necesitan salir a la superficie a respirar.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo se comunican los delfines entre sí?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionDelfines">
+                    <div class="accordion-body">
+                        Los delfines poseen un sofisticado sistema de comunicación basado en <strong>silbidos,
+                            chasquidos
+                            y clics de ecolocalización</strong>. Cada individuo desarrolla un "silbido de firma" único
+                        desde
+                        el nacimiento que funciona como un nombre personal. Las investigaciones han demostrado que los
+                        delfines recuerdan los silbidos de individuos conocidos durante más de 20 años, la memoria
+                        social
+                        más larga documentada fuera de los primates y elefantes.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Por qué los delfines saltan fuera del agua?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionDelfines">
+                    <div class="accordion-body">
+                        Los saltos cumplen varias funciones documentadas: <strong>comunicación social</strong> (los
+                        saltos
+                        son visibles a gran distancia), <strong>herramienta de caza</strong> (para orientarse y
+                        localizar
+                        bancos de peces desde el aire), <strong>ahorro de energía</strong> (en algunos casos nadar a
+                        alta
+                        velocidad en el aire es más eficiente que hacerlo en el agua), y posiblemente <strong>juego y
+                            placer</strong>, ya que los individuos jóvenes saltan con mucha mayor frecuencia que los
+                        adultos.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Cuales son las principales amenazas para los delfines?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionDelfines">
+                    <div class="accordion-body">
+                        Las principales amenazas son:
+                        <ul>
+                            <li><strong>Captura incidental</strong> en redes de pesca (especialmente artes de cerco y
+                                palangre).</li>
+                            <li><strong>Contaminación acústica</strong> por sónar militar y tráfico marítimo, que
+                                interfiere
+                                directamente con su ecolocalización y comunicación.</li>
+                            <li><strong>Contaminación química</strong>: PCBs, mercurio y microplásticos se acumulan en
+                                su
+                                tejido graso causando inmunosupresión y fallos reproductivos.</li>
+                            <li><strong>Destrucción del hábitat</strong> especialmente para las especies de agua dulce.
+                            </li>
+                            <li><strong>Caza directa</strong> en algunos países (Japón, Feroe, Perú) por tradición o
+                                para
+                                usar su carne como cebo de pesca.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Contacto  -->
+    <section class="bg-primary text-white py-5" id="contacto">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">¿Quieres apoyar la conservación?</h2>
+            <p class="mb-4">Suscríbete a nuetra newsletter semanal y recibe novedades sobre investigación de cetáceos,
+                campañas de conservación y avistamientos documentados.</p>
+            <form class="row g-2 justify-content-center" id="formNewsletter" novalidate>
+                <div class="col-sm-8 col-md-5">
+                    <input type="email" class="form-control form-control-lg" id="emailInput" placeholder="tu@correo.com"
+                        required aria-label="Tu correo electrónico">
+                    <div class="invalid-feedback text-warning">Por favor introduce un correo válido.</div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-light btn-lg fw-semibold">
+                        Suscribirme
+                    </button>
+                </div>
+            </form>
+            <div id="successMsg" class="alert alert-success mt-3 d-none" role="alert">
+                ¡Gracias! Te has suscrito correctamente.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1"> <strong class="text-white">Mundo Delfín</strong> - <strong class="text-white">Jesús Inurria Porrero 2026</strong>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Enlace al js de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Enlace a mi script de js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
